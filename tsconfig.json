@@ -1,0 +1,37 @@
+{
+  "exclude": [
+    "node_modules/",
+    "public",
+  ],
+  "include": [
+    "**/*"
+  ],
+  "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "@apps/*": ["apps/*"],
+        "@commons/*": ["commons/*"],
+        "@domains/*": ["domains/*"],
+        "@infra/*": ["infra/*"],
+        "@interfaces/*": ["interfaces/*"],
+        "@helpers/*": ["../helpers/*"]
+      },
+      "target": "es6",
+      "lib": [
+        "es2016",
+        "es2017.object",
+        "es2018"
+      ],
+      "outDir": "build/",
+      "rootDir": ".",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "allowUnreachableCode": false,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "types": ["node", "jest"],
+  }
+}

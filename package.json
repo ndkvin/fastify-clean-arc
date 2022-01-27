@@ -1,0 +1,38 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "NdkVin",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node ./build/src/app.js",
+    "start-dev": "tsc -w & nodemon -q -w build ./build/src/app.js",
+    "test-watch": "jest --watchAll --coverage --setupFiles dotenv/config -i",
+    "migrate": "node-pg-migrate",
+    "migrate-test": "node-pg-migrate -f config/db/dbTest.json"
+  },
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "fastest-validator": "^1.12.0",
+    "fastify": "^3.25.3",
+    "inversify": "^6.0.1",
+    "nanoid": "^3.2.0",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.7",
+    "node-pg-migrate": "^6.2.1",
+    "nodemon": "^2.0.15",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
