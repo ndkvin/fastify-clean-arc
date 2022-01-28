@@ -4,5 +4,3 @@ import InvariantError from '../../../commons/exceptions/InvariantError';
 export interface INoteValidator {
   AddNoteValidator(payload: any): void|InvariantError
 }
-
-export default INoteValidator;

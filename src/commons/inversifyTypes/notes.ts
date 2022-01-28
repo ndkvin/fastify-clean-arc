@@ -13,6 +13,7 @@ const NOTES_TYPES = {
   Nanoid: Symbol.for('nanoid'),
   Pool: Symbol.for('pool'),
   Fv: Symbol.for('fv'),
+  Validator: Symbol.for('INoteValidator'),
 };
 
 export default NOTES_TYPES;

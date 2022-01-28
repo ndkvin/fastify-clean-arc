@@ -7,7 +7,7 @@ const server = fastify();
 
 // eslint-disable-next-line no-unused-vars
 server.get('/ping', async (request, reply) => 'pong\n');
-
+server.get('/shiuu', async (request, reply) => 'shiuu\n');
 server.listen(5000, (err, address) => {
   if (err) {
     console.error(err);
