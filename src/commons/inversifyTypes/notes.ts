@@ -10,10 +10,11 @@ export type Fv = typeof fv;
 
 const NOTES_TYPES = {
   Repository: Symbol.for('INotesRepository'),
-  Nanoid: Symbol.for('nanoid'),
-  Pool: Symbol.for('pool'),
-  Fv: Symbol.for('fv'),
+  Nanoid: Symbol.for('Nanoid'),
+  Pool: Symbol.for('Pool'),
+  Fv: Symbol.for('Fv'),
   Validator: Symbol.for('INoteValidator'),
+  UseCase: Symbol.for('NoteUseCase'),
 };
 
 export default NOTES_TYPES;

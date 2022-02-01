@@ -1,13 +1,11 @@
 import dotenv from 'dotenv';
-import fastify from 'fastify';
+import createServer from './infra/http/createServer';
+import container from './infra/container';
 
 dotenv.config();
 
-const server = fastify();
+const server = createServer(container);
 
-// eslint-disable-next-line no-unused-vars
-server.get('/ping', async (request, reply) => 'pong\n');
-server.get('/shiuu', async (request, reply) => 'shiuu\n');
 server.listen(5000, (err, address) => {
   if (err) {
     console.error(err);

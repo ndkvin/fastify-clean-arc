@@ -1,7 +1,7 @@
 import { injectable, inject } from 'inversify';
 import { ValidationError } from 'fastest-validator';
 import NOTES_TYPES, { Fv } from '../../../commons/inversifyTypes/notes';
-import INoteValidator from '../../../apps/security/validator/NoteValidaotr';
+import { INoteValidator } from '../../../apps/security/validator/NoteValidaotr';
 import InvariantError from '../../../commons/exceptions/InvariantError';
 import 'reflect-metadata';
 
