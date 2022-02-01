@@ -26,7 +26,7 @@ const createServer = (container: IContainer) => {
     });
   });
 
-  app.register(notes, { container });
+  app.register(notes, { container, prefix: '/api' });
 
   return app;
 };
